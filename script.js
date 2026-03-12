@@ -9,7 +9,12 @@ alert("Please enter your name");
 return;
 }
 
-alert("Welcome "+name+"!");
+/* hide menu */
+document.getElementById("menu").style.display="none";
+
+/* show instructions */
+document.getElementById("instructions").classList.remove("hidden");
+
 }
 
 /* language buttons */
