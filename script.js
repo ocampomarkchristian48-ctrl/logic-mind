@@ -4,13 +4,13 @@ function enterGame(){
 
 let name = document.getElementById("playerName").value;
 
-if(name===""){
+if(name === ""){
 alert("Please enter your name");
 return;
 }
 
 /* hide menu */
-document.getElementById("menu").style.display="none";
+document.getElementById("menu").style.display = "none";
 
 /* show instructions */
 document.getElementById("instructions").classList.remove("hidden");
@@ -23,15 +23,16 @@ function setLang(lang){
 
 language = lang;
 
-if(lang==="en"){
+if(lang === "en"){
 alert("Language set to English");
 }
 
-if(lang==="tl"){
+if(lang === "tl"){
 alert("Wika ay Tagalog");
 }
 
 }
+
 
 /* floating math symbols */
 
@@ -50,7 +51,7 @@ symbol.style.animationDuration = (5 + Math.random()*10) + "s";
 
 document.querySelector(".symbols").appendChild(symbol);
 
-setTimeout(()=>{
+setTimeout(function(){
 symbol.remove();
 },15000);
 
