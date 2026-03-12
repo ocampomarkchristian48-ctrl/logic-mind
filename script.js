@@ -9,15 +9,12 @@ alert("Please enter your name");
 return;
 }
 
-/* hide menu */
 document.getElementById("menu").style.display = "none";
+document.querySelector(".title").style.display = "none";
 
-/* show instructions */
 document.getElementById("instructions").classList.remove("hidden");
 
 }
-
-/* language buttons */
 
 function setLang(lang){
 
@@ -32,7 +29,6 @@ alert("Wika ay Tagalog");
 }
 
 }
-
 
 /* floating math symbols */
 
@@ -51,7 +47,7 @@ symbol.style.animationDuration = (5 + Math.random()*10) + "s";
 
 document.querySelector(".symbols").appendChild(symbol);
 
-setTimeout(function(){
+setTimeout(()=>{
 symbol.remove();
 },15000);
 
